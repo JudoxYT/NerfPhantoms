@@ -125,7 +125,7 @@ public final class NerfPhantoms extends JavaPlugin implements Listener {
                 return true;
             }
             boolean state = togglePhantomSpawn(victim);
-            sender.sendMessage("Spawnen van phantoms " + (state ? "Uitgezet" : "Aangezet") + " voor " + player.getDisplayName() + ".");
+            sender.sendMessage("Spawnen van phantoms " + (state ? "Uitgezet" : "Aangezet") + " voor " + victim.getDisplayName() + ".");
             return true;
         }
 
