@@ -113,7 +113,7 @@ public final class NerfPhantoms extends JavaPlugin implements Listener {
                 }
                 Player player = (Player) sender;
                 boolean state = togglePhantomSpawn(player);
-                player.sendMessage("Phantom spawning " + (state ? ChatColor.RED + "Disabled" : ChatColor.GREEN + "Enabled") + ChatColor.RESET + " voor " + player.getDisplayName() + ".");
+                player.sendMessage("Phantom spawning " + (state ? ChatColor.RED + "uitgezet" : ChatColor.GREEN + "aangezet") + ChatColor.RESET + " voor " + player.getDisplayName() + ".");
                 return true;
             }
             if (!sender.hasPermission("nerfphantoms.disablespawn.others")) {
@@ -126,7 +126,7 @@ public final class NerfPhantoms extends JavaPlugin implements Listener {
                 return true;
             }
             boolean state = togglePhantomSpawn(victim);
-            sender.sendMessage("Phantom spawning " + (state ? ChatColor.RED + "Disabled" : ChatColor.GREEN + "Enabled") + ChatColor.RESET + " voor " + victim.getDisplayName() + ".");
+            sender.sendMessage("Phantom spawning " + (state ? ChatColor.RED + "uitgezet" : ChatColor.GREEN + "aangezet") + ChatColor.RESET + " voor " + victim.getDisplayName() + ".");
             return true;
         }
 
