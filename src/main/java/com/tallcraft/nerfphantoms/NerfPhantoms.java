@@ -112,8 +112,7 @@ public final class NerfPhantoms extends JavaPlugin implements Listener {
                 }
                 Player player = (Player) sender;
                 boolean state = togglePhantomSpawn(player);
-                player.sendMessage((state ? "Disabled" : "Enabled")
-                        + " phantom spawn for " + player.getDisplayName() + ".");
+                player.sendMessage("Spawnen van phantoms " + (state ? "Uitgezet" : "Aangezet") + " voor " + player.getDisplayName() + ".");
                 return true;
             }
             if (!sender.hasPermission("nerfphantoms.disablespawn.others")) {
@@ -126,8 +125,7 @@ public final class NerfPhantoms extends JavaPlugin implements Listener {
                 return true;
             }
             boolean state = togglePhantomSpawn(victim);
-            sender.sendMessage((state ? "Disabled" : "Enabled")
-                    + " phantom spawn for " + victim.getDisplayName() + ".");
+            sender.sendMessage("Spawnen van phantoms " + (state ? "Uitgezet" : "Aangezet") + " voor " + player.getDisplayName() + ".");
             return true;
         }
 
