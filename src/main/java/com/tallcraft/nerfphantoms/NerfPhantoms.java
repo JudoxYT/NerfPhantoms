@@ -113,7 +113,7 @@ public final class NerfPhantoms extends JavaPlugin implements Listener {
                 }
                 Player player = (Player) sender;
                 boolean state = togglePhantomSpawn(player);
-                player.sendMessage("Phantom spawning " + (state ? ChatColor.RED + "uitgezet" : ChatColor.GREEN + "aangeze") + ChatColor.RESET + " voor " + player.getDisplayName() + ".");
+                player.sendMessage("Phantom spawning " + (state ? ChatColor.RED + "uitgezet" : ChatColor.GREEN + "aangezet") + ChatColor.RESET + " voor " + player.getDisplayName() + ".");
                 return true;
             }
             if (!sender.hasPermission("nerfphantoms.disablespawn.others")) {
